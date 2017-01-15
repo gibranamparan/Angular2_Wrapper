@@ -1,0 +1,25 @@
+<header>
+	<nav class="navbar navbar-inverse">
+		<ul class="nav navbar-nav">
+			<li>
+				<a [routerLink]="['Alumnos']">Alumnos</a>
+			</li>
+			<li>
+				<a [routerLink]="['CreateAlumno']">Nuevo Alumno</a>
+			</li>
+			<li>
+				<a [routerLink]="['NestedComponents']">Nested Components</a>
+			</li>
+			<li>
+				<a [routerLink]="['TestPipes']">Test Pipes</a>
+			</li>
+			<li>
+				<a [routerLink]="['TestInjection']">Test Injection</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+<div class="main">
+	<httpTest></httpTest>
+	<router-outlet></router-outlet>
+</div>

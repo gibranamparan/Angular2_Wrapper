@@ -1,0 +1,12 @@
+<div class="container parent">
+<h2>Control Padre</h2>
+	<label for="nombre_padre">Nombre: </label>
+	<input type="text" id="nombre_padre" name="nombre_padre" #nombre_padre (keyup)='0'>
+	<label for="">Receiving: </label>
+	<span>{{mensaje}}</span>
+	<child1-component [datoEnviado]='nombre_padre.value'
+	(childChanged)='mensaje=$event'></child1-component>
+
+	<child1-component [datoEnviado]='mensaje'
+	(childChanged)='mensaje=$event'></child1-component>
+</div>

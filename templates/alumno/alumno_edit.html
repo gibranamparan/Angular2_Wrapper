@@ -1,0 +1,19 @@
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		Editar
+	</div>
+	<div class="panel-body">
+		<label for="nombre">Nombre:</label>
+		<input id="nombre" name="nombre" type="text"
+			[(ngModel)]="alumno.nombre"
+			[disabled]="hasToDisable()">
+		<label for="apellido">Apellido:</label>
+		<input id="apellido" name="apellido" type="text"
+			[(ngModel)]="alumno.apellido"
+			[disabled]="hasToDisable()">
+		<label for="grupo">Grupo:</label>
+		<input id="grupo" name="grupo" type="text"
+			[(ngModel)]="alumno.grupo"
+			[disabled]="hasToDisable()">
+	</div>
+</div>

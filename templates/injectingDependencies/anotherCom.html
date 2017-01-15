@@ -1,0 +1,14 @@
+<div class="col-md-6"
+	style="border: 1px solid black; 
+	padding: 1em;
+	background-color: #FF9292">
+	<h3>Component 2</h3>
+	<div>
+		<label for="newItem">New Item:</label>
+		<input type="text" name="newItem" id="newItem" #newItem>
+		<button (click)='addItem(newItem.value)'>Add</button>
+	</div>
+	<div *ngFor="#item of items">
+		{{item}}
+	</div>
+</div>

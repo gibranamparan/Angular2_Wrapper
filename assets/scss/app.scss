@@ -1,0 +1,19 @@
+body {
+  padding: 32px;
+  margin: 32px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+}
+
+.seleccionado td{
+	color: red;
+	background-color: #EEE;
+}
+
+.ng-dirty.ng-invalid{
+	background-color: pink;
+}
+
+.container.parent{
+	background-color: #DDD
+}

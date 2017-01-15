@@ -1,0 +1,31 @@
+<div class="panel panel-primary">
+	<div class="panel-heading">Nuevo Alumno</div>
+	<div class="panel-body">
+		<form [ngFormModel]='formaNuevoAlumno' (ngSubmit)="onSubmit(formaNuevoAlumno.value)">
+			<div class="row">
+				<div class="form-group col-md-6">
+					<label for="nombre">Nombre:</label>
+					<input id="nombre" name="nombre" type="text" class="form-control"
+					[ngFormControl]='formaNuevoAlumno.controls["nombre"]'>
+				</div>
+				<div class="form-group col-md-6">
+					<label for="apellido">Apellido:</label>
+					<input id="apellido" name="apellido" type="text" value="{{passedApellido}}" class="form-control"
+					[ngFormControl]='formaNuevoAlumno.controls["apellido"]'>
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group col-md-6">
+					<label for="grupo">Grupo:</label>
+					<input id="grupo" name="grupo" type="text" class="form-control"
+					[ngFormControl]='formaNuevoAlumno.controls["grupo"]'>
+				</div>
+			</div>
+			<!--
+			<button type="submit" class="btn btn-primary"
+			[disabled]="!formaNuevoAlumno.form.valid" >Registrar</button>
+			-->
+			<button type="submit" class="btn btn-primary">Registrar</button>
+		</form>
+	</div>
+</div>
